@@ -42,8 +42,8 @@ Do not provide code for any of the questions. Delete the text that says *YOUR AN
 
 **Review the file test_main.py and locate `test_case4()` and `test_case5()`. What did these tests cases do to ensure the class was functioning?**
 
-YOUR ANSWER HERE
+checking to see if it has a name and grades are between 0 to 4
 
 **How do get and set methods work within the context of the class and the object? What is the advantage of using this method?**
 
-YOUR ANSWER HERE
+making sure that you get the currect veruables and cleaning codes

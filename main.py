@@ -18,7 +18,8 @@ class Student:
         return self.name
     
     def set_grades(self, grade):
-        self.grades.append(grade)
+        if grade >= 0 and grade <= 4:
+            self.grades.append(grade)
         self.calculate_gpa()
 
     def get_grades(self):
@@ -56,12 +57,12 @@ def main():
     # Task: Take input and modify the Name attribute
     name = input("Name: ")
     stu.set_name(name)
-    grade = int(input("Grade: "))
+    grade = float(input("Grade: "))
 
     # Task: Take input and modify the Grades & GPA attributes
     while grade >= 0 and grade <= 4:
         stu.set_grades(grade)
-        grade = int(input("Grade: "))
+        grade = float(input("Grade: "))
         
     
     # Task: Output the result of message_student_gpa()
